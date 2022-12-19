@@ -1,0 +1,24 @@
+GET http://localhost:8080/api/users HTTP/1.1
+###
+POST  http://localhost:8080/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Xsano",
+    "lastname":"Abdurasulov",
+    "email":"hasanbojabdurasulov309@gmail.com",
+    "gender":"Mele",
+    "country":"Uzbekistan"
+}
+###
+DELETE http://localhost:8080/api/users/2
+###
+GET http://localhost:8080/api/users/9
+###
+PUT http://localhost:8080/api/users/8
+Content-Type: application/json
+
+{
+    "name":"Xasanboy",
+    "lastname":"Abdurasulov"
+}
